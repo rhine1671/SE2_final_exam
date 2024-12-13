@@ -4,13 +4,13 @@ CREATE TABLE findhire_accounts (
 	first_name VARCHAR(255),
 	last_name VARCHAR(255),
 	password TEXT,
-    role ENUM('HR', 'Applicant') NOT NULL;
+    	role ENUM('HR', 'Applicant') NOT NULL;
 	date_added TIMESTAMP DEFAULT CURRENT_TIMESTAMP 
 );
 
 CREATE TABLE jobs (
 	job_id INT AUTO_INCREMENT PRIMARY KEY,
-	title varchar(255) NOT NULL,
+	title VARCHAR(255) NOT NULL,
 	city varchar(255) NOT NULL,
 	company varchar(255) NOT NULL,
 	category varchar(255) NOT NULL,
